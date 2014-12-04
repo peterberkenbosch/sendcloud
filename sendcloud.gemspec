@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Sendcloud::VERSION
   spec.authors       = ["Peter Berkenbosch"]
   spec.email         = ["peter@pero-ict.nl"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{ruby client for the sendcloud api}
+  spec.description   = spec.summary
   spec.homepage      = ""
   spec.license       = "MIT"
 

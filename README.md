@@ -1,6 +1,8 @@
 # Sendcloud
 
-TODO: Write a gem description
+Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
+
+[SendCloud API Documentation](git@github.com:pero-ict-solutions/sendcloud.git)
 
 ## Installation
 
@@ -27,3 +29,6 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+Copyright (c) 2014 PeRo ICT Solutions
