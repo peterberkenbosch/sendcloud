@@ -7,6 +7,7 @@
 [![Code Climate](https://codeclimate.com/github/pero-ict-solutions/sendcloud/badges/gpa.svg)](https://codeclimate.com/github/pero-ict-solutions/sendcloud)
 [![Test Coverage](https://codeclimate.com/github/pero-ict-solutions/sendcloud/badges/coverage.svg)](https://codeclimate.com/github/pero-ict-solutions/sendcloud)
 
+[![Stories in Ready](https://badge.waffle.io/pero-ict-solutions/sendcloud.svg?label=ready&title=Ready)](http://waffle.io/pero-ict-solutions/sendcloud)
 
 Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
 
