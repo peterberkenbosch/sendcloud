@@ -1,3 +1,5 @@
+require 'httparty'
+
 module Sendcloud
   class Base
     include HTTParty
