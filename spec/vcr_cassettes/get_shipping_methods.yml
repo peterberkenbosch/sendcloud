@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://key:secret@panel.sendcloud.nl/api/v2/shipping_methods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Dec 2014 09:42:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Set-Cookie:
+      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%220f79b14fd4e7aaf9a50085c7a28e651b%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A14%3A%22217.120.18.125%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A4%3A%22Ruby%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1418031724%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7De5ad8e62c89fadfd29c00d0ba1df6b9c;
+        expires=Mon, 08-Dec-2014 11:42:04 GMT; Max-Age=7200; path=/
+      Status:
+      - '200'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, no-store
+      Content-Length:
+      - '890'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"shipping_methods":[{"id":1,"name":"Pakket Nederland (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":5.8}],"price":5.8,"options":[],"combinations":[{"id":1,"name":"Normaal
+        pakket"}]},{"id":2,"name":"Pakket met handtekening (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":6.2}],"price":6.2,"options":[],"combinations":[{"id":3,"name":"Pakket
+        met handtekening"}]},{"id":3,"name":"Pakket naar buitenland","countries":[{"id":1,"iso_3":"BEL","iso_2":"BE","name":"Belgie","price":9},{"id":3,"iso_3":"DEU","iso_2":"DE","name":"Duitsland","price":9},{"id":4,"iso_3":"BGR","iso_2":"BG","name":"Bulgarije","price":32},{"id":5,"iso_3":"DNK","iso_2":"DK","name":"Denemarken","price":15},{"id":6,"iso_3":"EST","iso_2":"EE","name":"Estland","price":32},{"id":7,"iso_3":"FIN","iso_2":"FI","name":"Finland","price":23},{"id":8,"iso_3":"FRA","iso_2":"FR","name":"Frankrijk","price":15},{"id":9,"iso_3":"GBR","iso_2":"GB","name":"Verenigd
+        Koninkrijk","price":15},{"id":10,"iso_3":"HUN","iso_2":"HU","name":"Hongarije","price":24},{"id":11,"iso_3":"IRL","iso_2":"IE","name":"Ierland","price":37},{"id":12,"iso_3":"ITA","iso_2":"IT","name":"Italie","price":18},{"id":13,"iso_3":"LVA","iso_2":"LV","name":"Letland","price":33},{"id":14,"iso_3":"LTU","iso_2":"LT","name":"Litouwen","price":33},{"id":15,"iso_3":"LUX","iso_2":"LU","name":"Luxemburg","price":13},{"id":16,"iso_3":"AUT","iso_2":"AT","name":"Oostenrijk","price":14},{"id":17,"iso_3":"POL","iso_2":"PL","name":"Polen","price":24},{"id":18,"iso_3":"PRT","iso_2":"PT","name":"Portugal","price":35},{"id":19,"iso_3":"ROU","iso_2":"RO","name":"Roemenie","price":31},{"id":20,"iso_3":"SVN","iso_2":"SI","name":"Slovenie","price":24},{"id":21,"iso_3":"SVK","iso_2":"SK","name":"Slowakije","price":21},{"id":22,"iso_3":"ESP","iso_2":"ES","name":"Spanje","price":21},{"id":23,"iso_3":"CZE","iso_2":"CZ","name":"Tsjechie","price":21},{"id":24,"iso_3":"SWE","iso_2":"SE","name":"Zweden","price":19},{"id":25,"iso_3":"GRC","iso_2":"GR","name":"Griekenland","price":26}],"options":[],"combinations":[{"id":6,"name":"Pakket
+        naar buitenland"}]},{"id":4,"name":"Verzekerd verzenden tot 500 euro (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":7.4}],"price":7.4,"options":[],"combinations":[{"id":10,"name":"Verzekerd
+        verzenden"}]},{"id":5,"name":"Handtekening voor ontvangst + alleen huisadres
+        (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":6.3}],"price":6.3,"options":[],"combinations":[{"id":11,"name":"Handtekening
+        voor ontvangst + alleen huisadres (PostNL)"}]},{"id":6,"name":"Alleen huisadres
+        (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":6.1}],"price":6.1,"options":[],"combinations":[{"id":12,"name":"Alleen
+        huisadres (PostNL)"}]},{"id":7,"name":"PakjeGemak (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":6.2}],"price":6.2,"options":[],"combinations":[{"id":7,"name":"Pakjegemak"}]},{"id":8,"name":"Brievenpost","countries":[{"id":1,"iso_3":"BEL","iso_2":"BE","name":"Belgie","price":0},{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":0},{"id":3,"iso_3":"DEU","iso_2":"DE","name":"Duitsland","price":0},{"id":4,"iso_3":"BGR","iso_2":"BG","name":"Bulgarije","price":0},{"id":5,"iso_3":"DNK","iso_2":"DK","name":"Denemarken","price":0},{"id":6,"iso_3":"EST","iso_2":"EE","name":"Estland","price":0},{"id":7,"iso_3":"FIN","iso_2":"FI","name":"Finland","price":0},{"id":8,"iso_3":"FRA","iso_2":"FR","name":"Frankrijk","price":0},{"id":9,"iso_3":"GBR","iso_2":"GB","name":"Verenigd
+        Koninkrijk","price":0},{"id":10,"iso_3":"HUN","iso_2":"HU","name":"Hongarije","price":0},{"id":11,"iso_3":"IRL","iso_2":"IE","name":"Ierland","price":0},{"id":12,"iso_3":"ITA","iso_2":"IT","name":"Italie","price":0},{"id":13,"iso_3":"LVA","iso_2":"LV","name":"Letland","price":0},{"id":14,"iso_3":"LTU","iso_2":"LT","name":"Litouwen","price":0},{"id":15,"iso_3":"LUX","iso_2":"LU","name":"Luxemburg","price":0},{"id":16,"iso_3":"AUT","iso_2":"AT","name":"Oostenrijk","price":0},{"id":17,"iso_3":"POL","iso_2":"PL","name":"Polen","price":0},{"id":18,"iso_3":"PRT","iso_2":"PT","name":"Portugal","price":0},{"id":19,"iso_3":"ROU","iso_2":"RO","name":"Roemenie","price":0},{"id":20,"iso_3":"SVN","iso_2":"SI","name":"Slovenie","price":0},{"id":21,"iso_3":"SVK","iso_2":"SK","name":"Slowakije","price":0},{"id":22,"iso_3":"ESP","iso_2":"ES","name":"Spanje","price":0},{"id":23,"iso_3":"CZE","iso_2":"CZ","name":"Tsjechie","price":0},{"id":24,"iso_3":"SWE","iso_2":"SE","name":"Zweden","price":0},{"id":25,"iso_3":"GRC","iso_2":"GR","name":"Griekenland","price":0}],"price":0,"options":[],"combinations":[{"id":14,"name":"Brievenpost"}]}]}'
+    http_version:
+  recorded_at: Mon, 08 Dec 2014 09:42:04 GMT
+recorded_with: VCR 2.9.3
