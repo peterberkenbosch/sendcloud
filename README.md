@@ -9,6 +9,8 @@
 
 [![Stories in Ready](https://badge.waffle.io/pero-ict-solutions/sendcloud.svg?label=ready&title=Ready)](http://waffle.io/pero-ict-solutions/sendcloud)
 
+Documentation on [RubyDoc](http://www.rubydoc.info/github/pero-ict-solutions/sendcloud/master)
+
 Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
 
 [SendCloud API Documentation](git@github.com:pero-ict-solutions/sendcloud.git)
