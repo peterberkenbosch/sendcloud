@@ -18,6 +18,7 @@ module Sendcloud
       if response["error"]
         raise ShippingMethodException.new(response["error"]["message"])
       end
+      response["shipping_method"]
     end
   end
 end
