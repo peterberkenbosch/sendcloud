@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels/123456
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 27 Jan 2015 14:56:45 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Set-Cookie:
+      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%225bb03541d2779e887820cab9112e1415%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A15%3A%22213.184.251.170%22%3Bs%3A10%3A%22user_agent%22%3Bb%3A0%3Bs%3A13%3A%22last_activity%22%3Bi%3A1422370605%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D3bcc068e026b29b49ebeb56726d9c2a0;
+        expires=Tue, 27-Jan-2015 16:56:45 GMT; Max-Age=7200; path=/
+      Status:
+      - '404'
+      Content-Length:
+      - '112'
+      Cache-Control:
+      - max-age=0, no-store
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":404,"request":"api\/v2\/parcels\/123456","message":"You
+        aren''t authorized to get this parcel"}}'
+    http_version: 
+  recorded_at: Tue, 27 Jan 2015 14:56:45 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels
+    body:
+      encoding: UTF-8
+      string: '{"parcel":{"id":123456,"requestShipment":true}}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 27 Jan 2015 12:38:07 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Set-Cookie:
+      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2259d2a2a40c9e3ad4ca779c56a90a853b%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A15%3A%22213.184.251.170%22%3Bs%3A10%3A%22user_agent%22%3Bb%3A0%3Bs%3A13%3A%22last_activity%22%3Bi%3A1422362287%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7Dbc310bed5fdc7be65eba62a267b2a0e6;
+        expires=Tue, 27-Jan-2015 14:38:07 GMT; Max-Age=7200; path=/
+      Status:
+      - '404'
+      Content-Length:
+      - '99'
+      Cache-Control:
+      - max-age=0, no-store
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":404,"request":"api\/v2\/parcels","message":"Parcel
+        is not found with ID: 123456"}}'
+    http_version: 
+  recorded_at: Tue, 27 Jan 2015 12:38:07 GMT
+recorded_with: VCR 2.9.3
