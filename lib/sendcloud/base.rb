@@ -4,6 +4,8 @@ module Sendcloud
   class Base
     include HTTParty
     format :json
+    base_uri 'https://panel.sendcloud.nl/api/v2/'
+
     attr_accessor :api_key, :api_secret
 
     #
