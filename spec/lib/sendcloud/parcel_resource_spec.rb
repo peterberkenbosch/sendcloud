@@ -4,10 +4,7 @@ describe Sendcloud::ParcelResource do
   let!(:new_parcel){
     {
         "name"=>"Rob van den Heuvel",
-        "address" => "Torenallee",
-        "city" => "Eindhoven",
-        "postal_code" => "5617BC",
-        "country" => "NL"
+        "shipment_address" => Sendcloud::ShipmentAddress.new('Torenallee', 'Eindhoven', '5617BC', 'NL')
     }
   }
   context 'create Parcel' do
@@ -15,8 +12,7 @@ describe Sendcloud::ParcelResource do
     it 'with valid params' do
       pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
       VCR.use_cassette('create_parcel') do
-        parcel = pr.create_parcel(new_parcel['name'], new_parcel['address'], new_parcel['city'],
-                                  new_parcel['postal_code'], new_parcel['country'], {id: 1})
+        parcel = pr.create_parcel(new_parcel['name'], new_parcel['shipment_address'], {id: 1})
         expect(parcel).not_to be_empty
         expect(parcel).to include('name'=>'Rob van den Heuvel')
         expect(parcel).to include('id')
@@ -27,8 +23,7 @@ describe Sendcloud::ParcelResource do
       it 'will return a error' do
         pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
         VCR.use_cassette('wrong_create_parcel_without_name') do
-          expect{pr.create_parcel(nil, new_parcel['address'], new_parcel['city'],
-                                  new_parcel['postal_code'], new_parcel['country'], {id: 1})}.
+          expect{pr.create_parcel(nil, new_parcel['shipment_address'], {id: 1})}.
               to raise_error(Sendcloud::ParcelResourceException, 'Name is required')
         end
       end
@@ -39,8 +34,7 @@ describe Sendcloud::ParcelResource do
     it 'with valid parcel_id' do
       pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
       VCR.use_cassette('adjust_parcel') do
-        parcel = pr.create_parcel(new_parcel['name'], new_parcel['address'], new_parcel['city'],
-                                   new_parcel['postal_code'], new_parcel['country'], {id: 1})
+        parcel = pr.create_parcel(new_parcel['name'], new_parcel['shipment_address'], {id: 1})
         adjust_parcel = pr.adjust_parcel(parcel['id'])
         expect(adjust_parcel).not_to be_empty
         expect(adjust_parcel['status']).not_to be_empty
@@ -61,8 +55,7 @@ describe Sendcloud::ParcelResource do
     it 'with valid parcel_id' do
       pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
       VCR.use_cassette('get_parcel_info') do
-        parcel = pr.create_parcel(new_parcel['name'], new_parcel['address'], new_parcel['city'],
-                                   new_parcel['postal_code'], new_parcel['country'], {id: 1})
+        parcel = pr.create_parcel(new_parcel['name'], new_parcel['shipment_address'], {id: 1})
         info = pr.show_parcel(parcel['id'])
         expect(info).not_to be_empty
         expect(info['id']).to eql(parcel['id'])
@@ -83,8 +76,7 @@ describe Sendcloud::ParcelResource do
     it 'with valid parcel_id' do
       pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
       VCR.use_cassette('get_label_for_parcel') do
-        parcel = pr.create_parcel(new_parcel['name'], new_parcel['address'], new_parcel['city'],
-                                  new_parcel['postal_code'], new_parcel['country'], {id: 1})
+        parcel = pr.create_parcel(new_parcel['name'], new_parcel['shipment_address'], {id: 1})
         adjust_parcel = pr.adjust_parcel(parcel['id'])
         label = pr.get_label_parcel(adjust_parcel['id'])
         expect(label['normal_printer']).not_to be_empty
