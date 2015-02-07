@@ -7,13 +7,10 @@
 [![Code Climate](https://codeclimate.com/github/pero-ict-solutions/sendcloud/badges/gpa.svg)](https://codeclimate.com/github/pero-ict-solutions/sendcloud)
 [![Test Coverage](https://codeclimate.com/github/pero-ict-solutions/sendcloud/badges/coverage.svg)](https://codeclimate.com/github/pero-ict-solutions/sendcloud)
 
-[![Stories in Ready](https://badge.waffle.io/pero-ict-solutions/sendcloud.svg?label=ready&title=Ready)](http://waffle.io/pero-ict-solutions/sendcloud)
-
 Documentation on [RubyDoc](http://www.rubydoc.info/github/pero-ict-solutions/sendcloud/master)
 
 Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
 
-[SendCloud API Documentation](git@github.com:pero-ict-solutions/sendcloud.git)
 
 ## Installation
 
@@ -29,10 +26,6 @@ Or install it yourself as:
 
     $ gem install sendcloud
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/sendcloud/fork )
@@ -42,4 +35,4 @@ TODO: Write usage instructions here
 5. Create new Pull Request
 
 
-Copyright (c) 2014 PeRo ICT Solutions
+Copyright (c) 2014-2015 PeRo ICT Solutions
