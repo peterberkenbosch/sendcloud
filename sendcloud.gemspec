@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sendcloud/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sendcloud"
+  spec.name          = "sendcloud-ruby"
   spec.version       = Sendcloud::VERSION
   spec.authors       = ["Peter Berkenbosch"]
   spec.email         = ["peter@pero-ict.nl"]
