@@ -1,7 +1,5 @@
 # Sendcloud
 
-***WORK IN PROGRESS***
-
 [![wercker status](https://app.wercker.com/status/03866f33222cc05a0e18eb2aac723f5c/m "wercker status")](https://app.wercker.com/project/bykey/03866f33222cc05a0e18eb2aac723f5c)
 [![Gem Version](https://badge.fury.io/rb/sendcloud.svg)](http://badge.fury.io/rb/sendcloud)
 [![Code Climate](https://codeclimate.com/github/pero-ict-solutions/sendcloud/badges/gpa.svg)](https://codeclimate.com/github/pero-ict-solutions/sendcloud)
