@@ -13,8 +13,7 @@ module Sendcloud
                                          country: shipment_address.country,
                                          shipment: shipment,
                                          requestShipment: false
-                                     }.merge(method_params).
-                                       merge(telephone: '', email: '', data: [])
+                                     }.merge(options(method_params))
                                  }.to_json,
                                   basic_auth: auth,
                                   headers: {'Content-Type' => 'application/json'}
@@ -56,6 +55,12 @@ module Sendcloud
         if response['error']
           raise ParcelResourceException.new(response['error']['message'])
         end
+      end
+
+      def options(method_params)
+        method_params[:telephone] = "" unless method_params[:telephone]
+        method_params[:email] = "" unless method_params[:email]
+        method_params.merge(data: []) unless method_params[:data]
       end
   end
 end
