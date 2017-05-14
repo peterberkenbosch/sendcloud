@@ -13,8 +13,7 @@ module Sendcloud
                                          country: shipment_address.country,
                                          shipment: shipment,
                                          requestShipment: false
-                                     }.merge(method_params).
-                                       merge(telephone: '', email: '', data: [])
+                                     }.merge(method_params)
                                  }.to_json,
                                   basic_auth: auth,
                                   headers: {'Content-Type' => 'application/json'}

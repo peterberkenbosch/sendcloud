@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/shipping_methods/1
+    uri: https://panel.sendcloud.nl/api/v2/shipping_methods/1
     body:
       encoding: US-ASCII
       string: ''
@@ -41,6 +41,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"shipping_method":{"id":1,"name":"Pakket Nederland (PostNL)","countries":[{"id":2,"iso_3":"NLD","iso_2":"NL","name":"Nederland","price":5.8}],"price":5.8,"options":[],"combinations":[{"id":1,"name":"Normaal
         pakket"}]}}'
-    http_version: 
+    http_version:
   recorded_at: Fri, 23 Jan 2015 09:51:08 GMT
 recorded_with: VCR 2.9.3

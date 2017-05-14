@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://key:secret@panel.sendcloud.nl/api/v2/shipping_methods/99
+    uri: https://panel.sendcloud.nl/api/v2/shipping_methods/99
     body:
       encoding: US-ASCII
       string: ''

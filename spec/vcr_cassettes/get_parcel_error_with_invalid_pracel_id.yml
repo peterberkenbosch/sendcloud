@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels/123456
+    uri: https://panel.sendcloud.nl/api/v2/parcels/123456
     body:
       encoding: US-ASCII
       string: ''
@@ -33,6 +33,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":{"code":404,"request":"api\/v2\/parcels\/123456","message":"You
         aren''t authorized to get this parcel"}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 27 Jan 2015 14:56:45 GMT
 recorded_with: VCR 2.9.3

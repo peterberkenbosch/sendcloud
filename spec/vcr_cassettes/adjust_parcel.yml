@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels
+    uri: https://panel.sendcloud.nl/api/v2/parcels
     body:
       encoding: UTF-8
       string: '{"parcel":{"name":"Rob van den Heuvel","address":"Torenallee","city":"Eindhoven","postal_code":"5617BC","country":"NL","shipment":{"id":1},"requestShipment":false,"telephone":"","email":"","data":[]}}'
@@ -38,11 +38,11 @@ http_interactions:
       string: '{"parcel":{"id":388185,"name":"Rob van den Heuvel","company_name":null,"address":"Torenallee  ","address_divided":{"street":"Torenallee","house_number":null},"city":"Eindhoven","postal_code":"5617BC","telephone":"","email":"","date_created":"27-01-2015
         13:38:05","reference":"","data":[],"country":{"iso_3":"NLD","iso_2":"NL","name":"Nederland"},"shipment":{"id":1,"name":"Pakket
         Nederland (PostNL)","options":[]}}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 27 Jan 2015 12:38:05 GMT
 - request:
     method: put
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels
+    uri: https://panel.sendcloud.nl/api/v2/parcels
     body:
       encoding: UTF-8
       string: '{"parcel":{"id":388185,"requestShipment":true}}'
@@ -79,6 +79,6 @@ http_interactions:
         13:38:05","reference":"","tracking_number":"3SYZXG106077438","label":{"normal_printer":["https:\/\/panel.sendcloud.nl\/api\/v2\/labels\/normal_printer\/388185?start_from=0&hash=c5bcb9dafccc0d1d5cfafdf677bd45085d35ff9f","https:\/\/panel.sendcloud.nl\/api\/v2\/labels\/normal_printer\/388185?start_from=1&hash=c5bcb9dafccc0d1d5cfafdf677bd45085d35ff9f","https:\/\/panel.sendcloud.nl\/api\/v2\/labels\/normal_printer\/388185?start_from=2&hash=c5bcb9dafccc0d1d5cfafdf677bd45085d35ff9f","https:\/\/panel.sendcloud.nl\/api\/v2\/labels\/normal_printer\/388185?start_from=3&hash=c5bcb9dafccc0d1d5cfafdf677bd45085d35ff9f"],"label_printer":"https:\/\/panel.sendcloud.nl\/api\/v2\/labels\/label_printer\/388185?hash=c5bcb9dafccc0d1d5cfafdf677bd45085d35ff9f"},"status":{"id":0,"message":"Gereed
         voor verzending","history":null},"data":[],"country":{"iso_3":"NLD","iso_2":"NL","name":"Nederland"},"shipment":{"id":1,"name":"Pakket
         Nederland (PostNL)","options":[]}}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 27 Jan 2015 12:38:06 GMT
 recorded_with: VCR 2.9.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels
+    uri: https://panel.sendcloud.nl/api/v2/parcels
     body:
       encoding: UTF-8
       string: '{"parcel":{"name":null,"address":"Torenallee","city":"Eindhoven","postal_code":"5617BC","country":"NL","shipment":{"id":1},"requestShipment":false,"telephone":"","email":"","data":[]}}'
@@ -35,6 +35,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":{"code":300,"request":"api\/v2\/parcels","message":"Name is
         required"}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 27 Jan 2015 12:38:07 GMT
 recorded_with: VCR 2.9.3

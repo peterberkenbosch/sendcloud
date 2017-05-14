@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/parcels
+    uri: https://panel.sendcloud.nl/api/v2/parcels
     body:
       encoding: UTF-8
       string: '{"parcel":{"name":"Rob van den Heuvel","address":"Torenallee","city":"Eindhoven","postal_code":"5617BC","country":"NL","shipment":{"id":1},"requestShipment":false,"telephone":"","email":"","data":[]}}'
@@ -38,6 +38,6 @@ http_interactions:
       string: '{"parcel":{"id":388186,"name":"Rob van den Heuvel","company_name":null,"address":"Torenallee  ","address_divided":{"street":"Torenallee","house_number":null},"city":"Eindhoven","postal_code":"5617BC","telephone":"","email":"","date_created":"27-01-2015
         13:38:07","reference":"","data":[],"country":{"iso_3":"NLD","iso_2":"NL","name":"Nederland"},"shipment":{"id":1,"name":"Pakket
         Nederland (PostNL)","options":[]}}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 27 Jan 2015 12:38:07 GMT
 recorded_with: VCR 2.9.3
