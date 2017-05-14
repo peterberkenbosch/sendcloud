@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://D74gAPTNto4N28N:Yb6m0YVBXtWm2zTdk@panel.sendcloud.nl/api/v2/labels/123456
+    uri: https://panel.sendcloud.nl/api/v2/labels/123456
     body:
       encoding: US-ASCII
       string: ''
@@ -35,6 +35,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":{"code":404,"request":"api\/v2\/labels\/123456","message":"Cannot
         find parcel with given Parcel ID (123456)"}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 27 Jan 2015 15:20:09 GMT
 recorded_with: VCR 2.9.3
