@@ -1,8 +1,6 @@
 # Sendcloud
 
-[![Gem Version](https://badge.fury.io/rb/sendcloud.svg)](http://badge.fury.io/rb/sendcloud-ruby)
-
-Documentation on [RubyDoc](http://www.rubydoc.info/github/pero-ict-solutions/sendcloud/master)
+[![Gem Version](https://badge.fury.io/rb/sendcloud-ruby.svg)](https://badge.fury.io/rb/sendcloud-ruby)
 
 Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
 
