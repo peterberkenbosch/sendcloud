@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/peterberkenbosch/sendcloud.svg?branch=master)](https://travis-ci.org/peterberkenbosch/sendcloud)
 [![Coverage Status](https://coveralls.io/repos/github/peterberkenbosch/sendcloud/badge.svg?branch=master)](https://coveralls.io/github/peterberkenbosch/sendcloud?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ece61bf61c16ee87324f/maintainability)](https://codeclimate.com/github/peterberkenbosch/sendcloud/maintainability)
+[![codecov](https://codecov.io/gh/peterberkenbosch/sendcloud/branch/master/graph/badge.svg)](https://codecov.io/gh/peterberkenbosch/sendcloud)
 
 
 Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
