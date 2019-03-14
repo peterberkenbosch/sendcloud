@@ -33,4 +33,4 @@ Or install it yourself as:
 5. Create new Pull Request
 
 
-Copyright (c) 2014-2018 Peter Berkenbosch Consultancy
+Copyright (c) 2014-2019 Peter Berkenbosch Consultancy
