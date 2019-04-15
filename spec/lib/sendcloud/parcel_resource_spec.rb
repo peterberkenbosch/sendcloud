@@ -93,4 +93,25 @@ describe Sendcloud::ParcelResource do
       end
     end
   end
+
+  context 'cancel parcel' do
+    it 'with valid parcel_id' do
+      pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
+      VCR.use_cassette('cancel_parcel') do
+        parcel = pr.create_parcel(new_parcel['name'], new_parcel['shipment_address'], {id: 1}, {house_number: "123"})
+        cancel_parcel = pr.cancel_parcel(parcel['id'])
+        expect(cancel_parcel).not_to be_empty
+        expect(cancel_parcel['status']).to eql("deleted")
+      end
+    end
+
+    it 'with invalid parcel_id' do
+      pr = Sendcloud::ParcelResource.new('D74gAPTNto4N28N', 'Yb6m0YVBXtWm2zTdk')
+      VCR.use_cassette('cancel_parcel_for_parcel_with_invalid_id') do
+        parcel_id = 123456
+        expect{pr.cancel_parcel(parcel_id)}.to raise_error(Sendcloud::ParcelResourceException,
+                                                          "No Parcel matches the given query.")
+      end
+    end
+  end
 end

@@ -50,6 +50,13 @@ module Sendcloud
       response['label']
     end
 
+    def cancel_parcel(parcel_id)
+      response = self.class.post("/parcels/#{parcel_id}/cancel", basic_auth: auth,
+                                header: {'Content-Type' => 'application/json'})
+      handle_response_error(response)
+      response
+    end
+
     private
       def handle_response_error(response)
         if response['error']
