@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://panel.sendcloud.nl/api/v2/parcels
+    body:
+      encoding: UTF-8
+      string: '{"parcel":{"name":"Rob van den Heuvel","address":"Torenallee","city":"Eindhoven","postal_code":"5617BC","country":"NL","shipment":{"id":1},"requestShipment":false,"house_number":"123"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic NTQyNTBmMzdjOWJjNDZiMzhhOTdiZjE5ZGI5MjE2ODg6NjQ4MDI4M2U2MzRhNDY1NTk3ZTU1ZWZmMWI2ZTcyYjU=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Apr 2019 11:59:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '896'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      X-Sendcloud-Client-Latest-Version-Macos:
+      - 1.0.3
+      X-Sendcloud-Client-Latest-Version-Windows:
+      - 1.0.4
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Sendcloud-Client-Latest-Version-Linux:
+      - 1.0.2
+      Allow:
+      - GET, POST, PUT, HEAD, OPTIONS
+      X-Sendcloud-Panel-Id:
+      - 48cd2d6110a253df458f3dbecfec4b8dc64680a2
+    body:
+      encoding: UTF-8
+      string: '{"parcel":{"id":21503501,"address":"Torenallee 123","address_2":"","address_divided":{"street":"Torenallee","house_number":"123"},"city":"Eindhoven","company_name":"","country":{"iso_2":"NL","iso_3":"NLD","name":"Netherlands"},"data":{},"date_created":"15-04-2019
+        11:59:39","email":"","name":"Rob van den Heuvel","postal_code":"5617BC","reference":"0","shipment":{"id":1,"name":"PostNL
+        Standard 0-30kg"},"status":{"id":999,"message":"No label"},"to_service_point":null,"telephone":"","tracking_number":"","weight":"1.000","label":{},"customs_declaration":{},"order_number":"","insured_value":0,"total_insured_value":0,"to_state":null,"customs_invoice_nr":"","customs_shipment_type":null,"parcel_items":[],"type":null,"shipment_uuid":"3c2ce417-ebb9-45cc-b5f0-b1859fb055b0","shipping_method":1,"external_order_id":"21503501","external_shipment_id":"","is_return":false,"carrier":{"code":"postnl"}}}'
+    http_version: 
+  recorded_at: Mon, 15 Apr 2019 11:59:39 GMT
+- request:
+    method: post
+    uri: https://panel.sendcloud.nl/api/v2/parcels/21503501/cancel
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic NTQyNTBmMzdjOWJjNDZiMzhhOTdiZjE5ZGI5MjE2ODg6NjQ4MDI4M2U2MzRhNDY1NTk3ZTU1ZWZmMWI2ZTcyYjU=
+  response:
+    status:
+      code: 410
+      message: Gone
+    headers:
+      Date:
+      - Mon, 15 Apr 2019 11:59:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '56'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Sendcloud-Client-Latest-Version-Macos:
+      - 1.0.3
+      X-Sendcloud-Client-Latest-Version-Windows:
+      - 1.0.4
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Sendcloud-Client-Latest-Version-Linux:
+      - 1.0.2
+      Allow:
+      - POST, OPTIONS
+      Vary:
+      - Cookie
+      X-Sendcloud-Panel-Id:
+      - 48cd2d6110a253df458f3dbecfec4b8dc64680a2
+    body:
+      encoding: UTF-8
+      string: '{"status":"deleted","message":"Parcel has been deleted"}'
+    http_version: 
+  recorded_at: Mon, 15 Apr 2019 11:59:39 GMT
+recorded_with: VCR 4.0.0

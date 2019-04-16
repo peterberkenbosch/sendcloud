@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://panel.sendcloud.nl/api/v2/parcels/123456/cancel
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic NTQyNTBmMzdjOWJjNDZiMzhhOTdiZjE5ZGI5MjE2ODg6NjQ4MDI4M2U2MzRhNDY1NTk3ZTU1ZWZmMWI2ZTcyYjU=
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 15 Apr 2019 11:48:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '110'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Sendcloud-Panel-Id:
+      - 48cd2d6110a253df458f3dbecfec4b8dc64680a2
+      Vary:
+      - Cookie
+      Allow:
+      - POST, OPTIONS
+      X-Sendcloud-Client-Latest-Version-Linux:
+      - 1.0.2
+      X-Sendcloud-Client-Latest-Version-Windows:
+      - 1.0.4
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Sendcloud-Client-Latest-Version-Macos:
+      - 1.0.3
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":404,"message":"No Parcel matches the given query.","request":"api/v2/parcels/123456/cancel"}}'
+    http_version: 
+  recorded_at: Mon, 15 Apr 2019 11:48:54 GMT
+recorded_with: VCR 4.0.0
