@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'yard'
   spec.add_development_dependency 'rubocop', '0.67.2'
-  spec.add_development_dependency 'rubocop-rspec', '1.32.0'
+  spec.add_development_dependency 'rubocop-rspec', '1.33.0'
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'simplecov-console'
   spec.add_development_dependency 'coveralls'
