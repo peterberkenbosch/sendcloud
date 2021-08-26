@@ -1,0 +1,94 @@
+{
+  "parcel": {
+      "address": "Insulindelaan 115",
+      "address_2": "",
+      "address_divided": {
+          "house_number": "115",
+          "street": "Insulindelaan"
+      },
+      "carrier": {
+          "code": "dhl"
+      },
+      "city": "Eindhoven",
+      "company_name": "Sendcloud",
+      "country": {
+          "iso_2": "NL",
+          "iso_3": "NLD",
+          "name": "Netherlands"
+      },
+      "customs_invoice_nr": "",
+      "customs_shipment_type": null,
+      "data": {},
+      "date_created": "05-06-2018 11:27:55",
+      "date_updated": "05-06-2018 11:27:55",
+      "date_announced": "05-06-2018 11:31:16",
+      "email": "john@doe.com",
+      "id": 22,
+      "insured_value": 0,
+      "label": {
+          "label_printer": "https://panel.sendcloud.sc/api/v2/labels/label_printer/22",
+          "normal_printer": [
+              "https://panel.sendcloud.sc/api/v2/labels/normal_printer/22?start_from=0",
+              "https://panel.sendcloud.sc/api/v2/labels/normal_printer/22?start_from=1",
+              "https://panel.sendcloud.sc/api/v2/labels/normal_printer/22?start_from=2",
+              "https://panel.sendcloud.sc/api/v2/labels/normal_printer/22?start_from=3"
+          ]
+      },
+      "name": "John Doe",
+      "order_number": "",
+      "shipment_uuid": "928a46f4-8891-4c09-8889-6d0f7c1dc01c",
+      "parcel_items": [],
+      "postal_code": "5642 CV",
+      "external_reference": null,
+      "shipment": {
+          "id": 8,
+          "name": "Unstamped letter"
+      },
+      "status": {
+          "id": 11,
+          "message": "Delivered"
+      },
+      "documents": [
+          {
+              "type": "cn23-default",
+              "size": "a4",
+              "link": "https://panel.sendcloud.sc/api/v2/parcels/22/documents/cn23-default"
+          },
+          {
+              "type": "commercial-invoice",
+              "size": "a6",
+              "link": "https://panel.sendcloud.sc/api/v2/parcels/22/documents/commercial-invoice"
+          },
+          {
+              "type": "cp71",
+              "size": "a6",
+              "link": "https://panel.sendcloud.sc/api/v2/parcels/22/documents/cp71"
+          },
+          {
+              "type": "label",
+              "size": "a6",
+              "link": "https://panel.sendcloud.sc/api/v2/parcels/22/documents/cn23"
+          }
+      ],
+      "telephone": "+31626262626",
+      "to_service_point": null,
+      "to_state": null,
+      "total_insured_value": 0,
+      "total_order_value_currency": "GBP",
+      "total_order_value": "11.11",
+      "tracking_number": "S0M3TR4Ck1NgNumB3r",
+      "tracking_url": "http://localhost:8000/?carrier=dhl&code=S0M3TR4Ck1NgNumB3r&destination=NL&lang=en-us&source=NL&type=parcel&verification=5642CV",
+      "weight": "1.000",
+      "type": "parcel",
+      "colli_tracking_number": "",
+      "colli_uuid": "ab3ecb5e-61b6-42b1-8034-7c6befdeaa63",
+      "collo_nr": 0,
+      "collo_count": 1,
+      "awb_tracking_number": null,
+      "box_number": null,
+      "length": null,
+      "width": null,
+      "height": null,
+      "shipping_method_checkout_name": ""
+  }
+}

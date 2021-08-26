@@ -41,4 +41,14 @@ class ParcelResourceTest < Minitest::Test
     parcel = client.parcel.create(**payload)
     assert_equal "John Doe", parcel.name
   end
+
+  def test_retrieve
+    parcel_id = "3"
+    stub = stub_request("parcels/#{parcel_id}", response: stub_response(fixture: "parcels/retrieve"))
+    client = Sendcloud::Client.new(api_key: "key", api_secret: "secret", adapter: :test, stubs: stub)
+    parcel = client.parcel.retrieve(parcel_id: parcel_id)
+
+    assert_equal Sendcloud::Parcel, parcel.class
+    assert_equal "Insulindelaan 115", parcel.address
+  end
 end
