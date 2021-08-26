@@ -4,7 +4,6 @@ module Sendcloud
 
     def self.from_response(response, key:, type:)
       body = response.body
-      puts body
       new(
         data: body[key].map { |attrs| type.new(attrs) },
         next_cursor: body.dig("next"),
