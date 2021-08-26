@@ -10,5 +10,8 @@ module Sendcloud
   autoload :Collection, "sendcloud/collection"
 
   autoload :ParcelResource, "sendcloud/resources/parcel"
+  autoload :ParcelStatusResource, "sendcloud/resources/parcel_status"
+
   autoload :Parcel, "sendcloud/objects/parcel"
+  autoload :ParcelStatus, "sendcloud/objects/parcel_status"
 end

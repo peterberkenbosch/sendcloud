@@ -17,6 +17,10 @@ module Sendcloud
       ParcelResource.new(self)
     end
 
+    def parcel_status
+      ParcelStatusResource.new(self)
+    end
+
     def connection
       @connection ||= Faraday.new do |conn|
         conn.url_prefix = BASE_URL
