@@ -51,4 +51,15 @@ class ParcelResourceTest < Minitest::Test
     assert_equal Sendcloud::Parcel, parcel.class
     assert_equal "Insulindelaan 115", parcel.address
   end
+
+  def test_update
+    parcel_id = "3"
+    body = {request_label: true}
+    stub = stub_request("parcels/#{parcel_id}", method: :patch, body: body, response: stub_response(fixture: "parcels/update"))
+    client = Sendcloud::Client.new(api_key: "key", api_secret: "secret", adapter: :test, stubs: stub)
+    parcel = client.parcel.update(parcel_id: parcel_id, **body)
+
+    assert_equal Sendcloud::Parcel, parcel.class
+    assert_equal "Ready to send", parcel.status.message
+  end
 end
