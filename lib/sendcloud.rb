@@ -7,6 +7,7 @@ module Sendcloud
   autoload :Error, "sendcloud/error"
   autoload :Object, "sendcloud/object"
   autoload :Resource, "sendcloud/resource"
+  autoload :Collection, "sendcloud/collection"
 
   autoload :ParcelResource, "sendcloud/resources/parcel"
   autoload :Parcel, "sendcloud/objects/parcel"
