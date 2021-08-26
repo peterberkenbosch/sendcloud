@@ -16,5 +16,9 @@ module Sendcloud
     def update(parcel_id:, **attributes)
       Parcel.new patch_request("parcels/#{parcel_id}", body: attributes).body.dig("parcel").first
     end
+
+    def cancel(parcel_id:)
+      post_request("parcels/#{parcel_id}/cancel", body: {})
+    end
   end
 end

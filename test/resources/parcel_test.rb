@@ -62,4 +62,11 @@ class ParcelResourceTest < Minitest::Test
     assert_equal Sendcloud::Parcel, parcel.class
     assert_equal "Ready to send", parcel.status.message
   end
+
+  def test_cancel
+    parcel_id = "3"
+    stub = stub_request("parcels/#{parcel_id}/cancel", method: :post, body: {}, response: stub_response(fixture: "parcels/canceled"))
+    client = Sendcloud::Client.new(api_key: "key", api_secret: "secret", adapter: :test, stubs: stub)
+    assert client.parcel.cancel(parcel_id: parcel_id)
+  end
 end
