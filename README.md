@@ -2,6 +2,8 @@
 
 Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
 
+Implementing https://docs.sendcloud.sc/api/v2/shipping/ and https://docs.sendcloud.sc/api/v2/service-points/
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -12,15 +14,52 @@ gem 'sendcloud-ruby'
 
 And then execute:
 
-    $ bundle install
+```sh
+  $ bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install sendcloud-ruby
+```sh
+$ gem install sendcloud-ruby
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+### Parcel
+
+To [create a Parcel](https://docs.sendcloud.sc/api/v2/shipping/#create-a-parcel) you have to send a parcel hash like so:
+
+```ruby
+  payload = {
+    parcel: {
+      name: "John Doe",
+      company_name: "Sendcloud",
+      address: "Insulindelaan",
+      house_number: "115",
+      city: "Eindhoven",
+      postal_code: "5642CV",
+      telephone: "+31612345678",
+      request_label: true,
+      email: "john@doe.com",
+      data: [],
+      country: "NL",
+      shipment: {
+        id: 8
+      },
+      weight: "10.000",
+      order_number: "1234567890",
+      insured_value: 2000,
+      total_order_value_currency: "GBP",
+      total_order_value: "11.11",
+      quantity: 1,
+      shipping_method_checkout_name: "DHL Express Domestic"
+    }
+  }
+
+  client = Sendcloud::Client.new(api_key: "key", api_secret: "secret")
+  parcel = client.parcel.create(**payload)
+``` 
 
 ## Development
 
