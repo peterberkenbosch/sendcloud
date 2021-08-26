@@ -1,3 +1,10 @@
-source 'https://rubygems.org'
-gem 'codecov', :require => false, :group => :test
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# Specify your gem's dependencies in sendcloud.gemspec
 gemspec
+
+gem "rake", "~> 13.0"
+
+gem "minitest", "~> 5.0"

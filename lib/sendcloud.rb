@@ -1,5 +1,13 @@
+require "faraday"
+require "faraday_middleware"
 require "sendcloud/version"
-require "sendcloud/base"
-require "sendcloud/shipping_method"
-require "sendcloud/parcel_resource"
-require "sendcloud/shipment_address"
+
+module Sendcloud
+  autoload :Client, "sendcloud/client"
+  autoload :Error, "sendcloud/error"
+  autoload :Object, "sendcloud/object"
+  autoload :Resource, "sendcloud/resource"
+
+  autoload :ParcelResource, "sendcloud/resources/parcel"
+  autoload :Parcel, "sendcloud/objects/parcel"
+end
