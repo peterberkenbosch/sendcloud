@@ -6,19 +6,17 @@ Gem::Specification.new do |spec|
   spec.name = "sendcloud-ruby"
   spec.version = Sendcloud::VERSION
   spec.authors = ["Peter Berkenbosch"]
-  spec.email = ["opensource@pbcbv.com"]
+  spec.email = ["info@peterberkenbosch.nl"]
 
   spec.summary = "Ruby client for the Sendcloud API"
   spec.description = spec.summary
-  spec.homepage = "https://github.com/pbcbv/sendcloud"
+  spec.homepage = "https://github.com/peterberkenbosch/sendcloud"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
-
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/pbcbv/sendcloud"
-  # spec.metadata["changelog_uri"] = "https://github.com/pbcbv/sendcloud/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/peterberkenbosch/sendcloud"
+  # spec.metadata["changelog_uri"] = "https://github.com/peterberkenbosch/sendcloud/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -27,10 +25,8 @@ Gem::Specification.new do |spec|
       (f == __FILE__) || f.match(%r{\A(?:(?:test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
     end
   end
-  spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
 
+  spec.require_paths = ["lib"]
   spec.add_dependency "faraday", "~> 1.7"
   spec.add_dependency "faraday_middleware", "~> 1.1"
 
