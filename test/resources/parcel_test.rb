@@ -1,6 +1,16 @@
 require "test_helper"
 
 class ParcelResourceTest < Minitest::Test
+
+  def test_list
+    stub = stub_request("parcels", response: stub_response(fixture: "parcels/list"))
+    client = Sendcloud::Client.new(api_key: "key", api_secret: "secret", adapter: :test, stubs: stub)
+    parcels = client.parcel.list
+
+    assert_equal Sendcloud::Collection, parcels.class
+    assert_equal Sendcloud::Parcel, parcels.data.first.class    
+  end
+
   def test_create
     payload = {
       parcel: {
