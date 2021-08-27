@@ -1,0 +1,41 @@
+{
+  "shipping_method": {
+    "carrier": "sendcloud",
+    "countries": [
+        {
+            "id": 76,
+            "iso_2": "FR",
+            "iso_3": "FRA",
+            "name": "France",
+            "price": 0
+        },
+        {
+            "id": 60,
+            "iso_2": "DE",
+            "iso_3": "DEU",
+            "name": "Germany",
+            "price": 0
+        },
+        {
+            "id": 167,
+            "iso_2": "NL",
+            "iso_3": "NLD",
+            "name": "Netherlands",
+            "price": 0
+        },
+        {
+            "id": 235,
+            "iso_2": "US",
+            "iso_3": "USA",
+            "name": "United States",
+            "price": 0
+        }
+    ],
+    "id": 8,
+    "max_weight": "1000.000",
+    "min_weight": "0.001",
+    "name": "Unstamped letter",
+    "price": 0,
+    "service_point_input": "none"
+  }
+}
