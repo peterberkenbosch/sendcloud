@@ -12,8 +12,10 @@ module Sendcloud
   autoload :ParcelResource, "sendcloud/resources/parcel"
   autoload :ParcelStatusResource, "sendcloud/resources/parcel_status"
   autoload :ShippingMethodResource, "sendcloud/resources/shipping_method"
+  autoload :LabelResource, "sendcloud/resources/label"
 
   autoload :Parcel, "sendcloud/objects/parcel"
   autoload :ParcelStatus, "sendcloud/objects/parcel_status"
   autoload :ShippingMethod, "sendcloud/objects/shipping_method"
+  autoload :Label, "sendcloud/objects/label"
 end

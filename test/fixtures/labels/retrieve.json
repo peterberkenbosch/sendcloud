@@ -1,0 +1,12 @@
+{
+  "label": {
+    "normal_printer": [
+      "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=0",
+      "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=1",
+      "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=2",
+      "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=3"
+    ],
+    "label_printer": "https://panel.sendcloud.sc/api/v2/label/label_printer/3172?hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+  },
+  "customs_declaration": {}
+}
