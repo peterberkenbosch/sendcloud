@@ -18,4 +18,13 @@ class ServicePointResourceTest < Minitest::Test
     assert_equal Array, carriers.class
     assert_equal ["postnl", "ups"], carriers
   end
+
+  def test_check_availability
+    service_point_id = 999
+    stub = stub_request("service-points/#{service_point_id}/check-availability", response: stub_response(fixture: "service_points/check_availability"))
+    client = Sendcloud::ServicePointClient.new(api_key: "key", adapter: :test, stubs: stub)
+    available = client.service_point.check_availability(service_point_id: service_point_id)
+
+    assert available
+  end
 end
