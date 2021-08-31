@@ -18,7 +18,7 @@ module Sendcloud
     end
 
     def cancel(parcel_id:)
-      post_request("parcels/#{parcel_id}/cancel", body: {})
+      ParcelStatus.new post_request("parcels/#{parcel_id}/cancel", body: {}).body
     end
   end
 end

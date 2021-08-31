@@ -67,6 +67,10 @@ class ParcelResourceTest < Minitest::Test
     parcel_id = "3"
     stub = stub_request("parcels/#{parcel_id}/cancel", method: :post, body: {}, response: stub_response(fixture: "parcels/canceled"))
     client = Sendcloud::Client.new(api_key: "key", api_secret: "secret", adapter: :test, stubs: stub)
-    assert client.parcel.cancel(parcel_id: parcel_id)
+
+    canceled_response = client.parcel.cancel(parcel_id: parcel_id)
+    assert_equal Sendcloud::ParcelStatus, canceled_response.class
+    assert_equal "cancelled", canceled_response.status
+    assert_equal "Parcel has been cancelled", canceled_response.message
   end
 end
