@@ -22,7 +22,6 @@ class ParcelResourceTest < Minitest::Test
         telephone: "+31612345678",
         request_label: true,
         email: "john@doe.com",
-        data: [],
         country: "NL",
         shipment: {
           id: 8

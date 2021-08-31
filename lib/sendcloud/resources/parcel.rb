@@ -6,7 +6,7 @@ module Sendcloud
     end
 
     def create(**attributes)
-      Parcel.new post_request("parcels", body: attributes).body.dig("parcel").first
+      Parcel.new post_request("parcels", body: attributes).body.dig("parcel")
     end
 
     def retrieve(parcel_id:)
@@ -14,7 +14,7 @@ module Sendcloud
     end
 
     def update(parcel_id:, **attributes)
-      Parcel.new patch_request("parcels/#{parcel_id}", body: attributes).body.dig("parcel").first
+      Parcel.new patch_request("parcels/#{parcel_id}", body: attributes).body.dig("parcel")
     end
 
     def cancel(parcel_id:)
