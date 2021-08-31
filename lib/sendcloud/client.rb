@@ -29,6 +29,11 @@ module Sendcloud
       LabelResource.new(self)
     end
 
+    def service_point
+      service_point_client = ServicePointClient.new(api_key: api_key, adapter: adapter, stubs: stubs)
+      service_point_client.service_point
+    end
+
     def connection
       @connection ||= Faraday.new do |conn|
         conn.url_prefix = BASE_URL
