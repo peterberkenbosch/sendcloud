@@ -35,9 +35,8 @@ module Sendcloud
     end
 
     def connection
-      @connection ||= Faraday.new do |conn|
-        conn.url_prefix = BASE_URL
-        conn.basic_auth(api_key, api_secret)
+      @connection ||= Faraday.new(BASE_URL) do |conn|
+        conn.request :basic_auth, api_key, api_secret
         conn.request :json
         conn.response :json, content_type: "application/json"
         conn.adapter adapter, @stubs
