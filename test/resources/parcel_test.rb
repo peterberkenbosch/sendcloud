@@ -20,7 +20,6 @@ class ParcelResourceTest < Minitest::Test
         city: "Eindhoven",
         postal_code: "5642CV",
         telephone: "+31612345678",
-        request_label: true,
         email: "john@doe.com",
         country: "NL",
         shipment: {
@@ -53,7 +52,7 @@ class ParcelResourceTest < Minitest::Test
 
   def test_update
     parcel_id = "3"
-    body = {request_label: true}
+    body = {parcel: {request_label: true}}
     stub = stub_request("parcels/#{parcel_id}", method: :patch, body: body, response: stub_response(fixture: "parcels/update"))
     client = Sendcloud::Client.new(api_key: "key", api_secret: "secret", adapter: :test, stubs: stub)
     parcel = client.parcel.update(parcel_id: parcel_id, **body)
