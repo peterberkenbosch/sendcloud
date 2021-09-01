@@ -30,7 +30,7 @@ module Sendcloud
     end
 
     def service_point
-      service_point_client = ServicePointClient.new(api_key: api_key, adapter: adapter, stubs: stubs)
+      service_point_client = ServicePointClient.new(api_key: api_key, adapter: adapter, stubs: @stubs)
       service_point_client.service_point
     end
 
