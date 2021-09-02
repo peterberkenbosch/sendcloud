@@ -1,0 +1,51 @@
+{
+  "parcel": {
+    "id": 3,
+    "name": "Anna Tester",
+    "company_name": "Summer Co",
+    "address": "Insulindelaan 115",
+    "address_divided": {
+      "street": "Insulindelaan",
+      "house_number": "115"
+    },
+    "city": "Eindhoven",
+    "postal_code": "5642CV",
+    "telephone": "0612345678",
+    "email": "",
+    "date_created": "01-01-2018 21:45:30",
+    "date_updated": "01-01-2018 21:45:31",
+    "date_announced": "01-01-2018 21:45:31",
+    "tracking_number": "S0M3TR4Ck1NgNumB3r",
+    "weight": "2.000",
+    "label": {
+      "normal_printer": [
+        "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=0&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+        "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=1&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+        "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=2&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4",
+        "https://panel.sendcloud.sc/api/v2/label/normal_printer/3172?start_from=3&hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+      ],
+      "label_printer": "https://panel.sendcloud.sc/api/v2/label/label_printer/3172?hash=bbfd669ee9ebb19408b85b33d181a50040fd9bc4"
+    },
+    "customs_declaration": {},
+    "status": {
+      "id": 0,
+      "message": "Ready to send"
+    },
+    "data": [],
+    "country": {
+      "iso_3": "NLD",
+      "iso_2": "NL",
+      "name": "Netherlands"
+    },
+    "shipment": {
+      "id": 8,
+      "name": "Unstamped letter"
+    },
+    "colli_tracking_number": "",
+    "colli_uuid": "ab3ecb5e-61b6-42b1-8034-7c6befdeaa63",
+    "collo_nr": 0,
+    "collo_count": 1,
+    "awb_tracking_number": null,
+    "box_number": null
+  }
+}

@@ -1,36 +1,47 @@
 # Sendcloud
 
-[![Gem Version](https://badge.fury.io/rb/sendcloud-ruby.svg)](https://badge.fury.io/rb/sendcloud-ruby)
-[![Build Status](https://travis-ci.org/peterberkenbosch/sendcloud.svg?branch=master)](https://travis-ci.org/peterberkenbosch/sendcloud)
-[![Coverage Status](https://coveralls.io/repos/github/peterberkenbosch/sendcloud/badge.svg?branch=master)](https://coveralls.io/github/peterberkenbosch/sendcloud?branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/ece61bf61c16ee87324f/maintainability)](https://codeclimate.com/github/peterberkenbosch/sendcloud/maintainability)
-[![codecov](https://codecov.io/gh/peterberkenbosch/sendcloud/branch/master/graph/badge.svg)](https://codecov.io/gh/peterberkenbosch/sendcloud)
+![Tests](https://github.com/peterberkenbosch/sendcloud/workflows/Ruby/badge.svg)
+
+Clean, fast Ruby implementation for the [Sendcloud API's](https://www.sendcloud.com/api/)
+
+* [Shipping API](https://docs.sendcloud.sc/api/v2/shipping/)
+* [Service Point API](https://docs.sendcloud.sc/api/v2/service-points/)
+* [Return Portal API](https://docs.sendcloud.sc/api/v2/return-portal/)
 
 
-Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
-
+This README is for the (unreleased) complete rewrite v3 of this library! 
+Previous releases can be found here: https://github.com/peterberkenbosch/sendcloud/releases
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile to use this version.
 
-    gem 'sendcloud-ruby'
+```ruby
+gem 'sendcloud-ruby', github:'peterberkenbosch/sendcloud' require 'sendcloud'
+```
 
 And then execute:
 
-    $ bundle
+```sh
+  $ bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install sendcloud-ruby
+```sh
+$ gem install sendcloud-ruby
+```
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-1. Fork it ( http://github.com/peterberkenbosch/sendcloud/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Bug reports and pull requests are welcome on GitHub at https://github.com/peterberkenbosch/sendcloud.
 
+## License
 
-Copyright (c) 2014-2019 Peter Berkenbosch Consultancy
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

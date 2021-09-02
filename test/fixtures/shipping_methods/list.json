@@ -1,0 +1,29 @@
+{
+  "shipping_methods": [
+      {
+          "service_point_input": "none",
+          "max_weight": "1.000",
+          "name": "Low weight shipment",
+          "carrier": "carrier_code",
+          "countries": [
+              {
+                  "iso_2": "BE",
+                  "iso_3": "BEL",
+                  "id": 1,
+                  "price": 3.50,
+                  "name": "Belgium"
+              },
+              {
+                  "iso_2": "NL",
+                  "iso_3": "NLD",
+                  "id": 2,
+                  "price": 4.20,
+                  "name": "Netherlands"
+              }
+          ],
+          "min_weight": "0.001",
+          "id": 1,
+          "price": 0
+      }
+  ]
+}
