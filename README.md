@@ -1,15 +1,23 @@
 # Sendcloud
 
-Ruby API Client for the [SendCloud](https://www.sendcloud.nl) delivery platform.
+![Tests](https://github.com/peterberkenbosch/sendcloud/workflows/Ruby/badge.svg)
 
-Implementing https://docs.sendcloud.sc/api/v2/shipping/ and https://docs.sendcloud.sc/api/v2/service-points/
+Clean, fast Ruby implementation for the [Sendcloud API's](https://www.sendcloud.com/api/)
+
+* [Shipping API](https://docs.sendcloud.sc/api/v2/shipping/)
+* [Service Point API](https://docs.sendcloud.sc/api/v2/service-points/)
+* [Return Portal API](https://docs.sendcloud.sc/api/v2/return-portal/)
+
+
+This README is for the (unreleased) complete rewrite v3 of this library! 
+Previous releases can be found here: https://github.com/peterberkenbosch/sendcloud/releases
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile to use this version.
 
 ```ruby
-gem 'sendcloud-ruby'
+gem 'sendcloud-ruby', github:'peterberkenbosch/sendcloud' require 'sendcloud'
 ```
 
 And then execute:
@@ -23,43 +31,6 @@ Or install it yourself as:
 ```sh
 $ gem install sendcloud-ruby
 ```
-
-## Usage
-
-### Parcel
-
-To [create a Parcel](https://docs.sendcloud.sc/api/v2/shipping/#create-a-parcel) you have to send a parcel hash like so:
-
-```ruby
-  payload = {
-    parcel: {
-      name: "John Doe",
-      company_name: "Sendcloud",
-      address: "Insulindelaan",
-      house_number: "115",
-      city: "Eindhoven",
-      postal_code: "5642CV",
-      telephone: "+31612345678",
-      request_label: true,
-      email: "john@doe.com",
-      data: [],
-      country: "NL",
-      shipment: {
-        id: 8
-      },
-      weight: "10.000",
-      order_number: "1234567890",
-      insured_value: 2000,
-      total_order_value_currency: "GBP",
-      total_order_value: "11.11",
-      quantity: 1,
-      shipping_method_checkout_name: "DHL Express Domestic"
-    }
-  }
-
-  client = Sendcloud::Client.new(api_key: "key", api_secret: "secret")
-  parcel = client.parcel.create(**payload)
-``` 
 
 ## Development
 
