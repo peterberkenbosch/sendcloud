@@ -4,6 +4,10 @@ module Sendcloud
       Label.new get_request("labels/#{parcel_id}").body.dig("label")
     end
 
+    def pdf(path:)
+      get_request(path).body
+    end
+
     def retrieve_bulk(parcel_ids:)
       attributes = {
         label: {
