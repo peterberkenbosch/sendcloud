@@ -12,6 +12,7 @@ Clean, fast Ruby implementation for the [Sendcloud API's](https://www.sendcloud.
 This README is for the (unreleased) complete rewrite v3 of this library! 
 Previous releases can be found here: https://github.com/peterberkenbosch/sendcloud/releases
 
+[Full Documentation](https://peterberkenbosch.gitbook.io/sendcloud-ruby/)
 ## Installation
 
 Add this line to your application's Gemfile to use this version.
