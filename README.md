@@ -2,11 +2,12 @@
 
 ![Tests](https://github.com/peterberkenbosch/sendcloud/workflows/Ruby/badge.svg)
 
-Clean, fast Ruby implementation for the [Sendcloud API's](https://www.sendcloud.com/api/)
+Clean, fast Ruby implementation for the shipping and service point [Sendcloud API's](https://www.sendcloud.com/api/)
 
 * [Shipping API](https://docs.sendcloud.sc/api/v2/shipping/)
 * [Service Point API](https://docs.sendcloud.sc/api/v2/service-points/)
-* [Return Portal API](https://docs.sendcloud.sc/api/v2/return-portal/)
+
+The [Return Portal API](https://docs.sendcloud.sc/api/v2/return-portal/) is currently not implemented.
 
 
 This README is for the (unreleased) complete rewrite v3 of this library! 
