@@ -1,6 +1,6 @@
 module Sendcloud
   class Client
-    BASE_URL = "https://panel.sendcloud.nl/api/v2"
+    BASE_URL = "https://panel.sendcloud.sc/api/v2"
 
     attr_reader :api_key, :api_secret, :adapter
 
