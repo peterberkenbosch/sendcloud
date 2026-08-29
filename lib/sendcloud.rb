@@ -1,5 +1,5 @@
 require "faraday"
-require "faraday_middleware"
+require "faraday/follow_redirects"
 require "sendcloud/version"
 
 module Sendcloud

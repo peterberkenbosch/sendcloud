@@ -19,7 +19,7 @@ module Sendcloud
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
         conn.request :authorization, :AccessToken, api_key
-        conn.use FaradayMiddleware::FollowRedirects, {clear_authorization_header: false}
+        conn.response :follow_redirects, {clear_authorization_header: false}
         conn.request :json
         conn.response :json, content_type: "application/json"
         conn.adapter adapter, @stubs
